@@ -31,6 +31,11 @@
     line-height: 2rem;
     justify-content: center;
     align-items: center;
+    transition: background 0.3s, opacity 0.3s;
+}
+.nav-option:hover {
+    background: #292929;
+    opacity: 0.9;
 }
 .nav-option i{
     font-size: 1.2rem;
@@ -56,6 +61,7 @@
     bottom: 0;
     height: 75px;
     width: 100%;
+    display: flex;
 }
 .library{
     margin-top: 0.5rem;
@@ -142,6 +148,10 @@
     width: fit-content;
     font-size: 1rem;
     cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+.badge:hover {
+    background: #f0f0f0;
 }
 .part3{
     background: #232323;
@@ -238,9 +248,11 @@ h2{
     width: 15rem;
     margin: 1rem;
     border-radius: 0.5rem;
+    transition: background 0.3s, transform 0.3s;
 }
 .box-container:hover{
     cursor: pointer;
+    transform: scale(1.05);
 }
 .box-container img{
     height: 15rem;
@@ -284,4 +296,100 @@ h2{
     width: 90%;
     height: 50%;
     background: #121212;   
+}
+.left-footer{
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+.left-footer img{
+    margin-right: 1rem;
+}
+.left-footer img:hover{
+    cursor: pointer;
+}
+.center-footer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+.playerbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    
+}
+.center-footer img:hover{
+    cursor: pointer;
+}
+.progressbar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.progressplayer {
+    width: 70%;
+    appearance: none;
+    cursor: pointer;
+}
+.progressplayer::-webkit-slider-runnable-track{
+    background: #ddd;
+    border-radius: 100px;
+    height: 0.25rem;
+}
+.progressplayer::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background: #1db760;
+    border-radius: 50%;
+    margin-top: -0.45rem;
+}
+.right-footer{
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.right-footer img{
+    height: 2.5rem;
+}
+.right-footer img:hover{
+    cursor: pointer;
+}
+.voice{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.voice img{
+    height: 2.25rem;
+}
+.slider{
+    appearance: none;
+    cursor: pointer;
+    height: 1rem;
+}
+
+.slider::-webkit-slider-thumb{
+    appearance: none;
+    background: #1db760;
+    height: 1rem;
+    width:1rem;
+    border-radius: 50%;
+    margin-top: -7px;
+}
+.slider::-webkit-slider-runnable-track{
+    appearance: none;
+    background: #ddd;
+    height: 0.15rem;
+    border-radius: 100px;
+    width: 100%;
 }
