@@ -1,1 +1,3 @@
-# Spotify_clone <b> using HTML ans CSS </b>
+# Spotify_clone using HTML ans CSS 
+
+<img src="./assetss/img.png">
